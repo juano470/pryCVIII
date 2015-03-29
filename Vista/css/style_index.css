@@ -1,0 +1,28 @@
+	#contactVideo
+            {
+  				margin-top: 10%;
+            	margin-left: 25%;
+            	margin-right: 25%;
+            	margin-bottom: 20%;
+                 }
+    
+    #video_index{
+    	align: center;
+    	width: 400px;
+    	height: 400px;
+    }
+
+    	#contentAvatar
+            { 
+            	position: absolute;
+  				top: 50px; 
+  				left: 50px;
+
+            	margin-top: 12%;
+            	height:400px;
+            	width:250px;
+            	background-image:url('avatar_index.png');
+
+            
+            }
+            
