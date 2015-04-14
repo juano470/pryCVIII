@@ -14,32 +14,19 @@
             function closeForm(){
                 $("#messageSent").show("slow");
                 setTimeout('$("#messageSent").hide();$("#contactForm").slideUp("slow")', 2000);
+                 
            }
 
+function inicioSesion(){
+      
+       alert("hola")
+     };
+   
 
-    $("#login").click(function() {
-        var login = $("#nombre").val();
-        var pass = $("#pass").val();
-        $.post('Controlador/fachada.php', {
-            clase: 'clsLogin',
-            oper: 'login',
-            user: login,
-            pass: pass
-
-        }, function(data) {
-            if (data === "admin") {
-                window.location = "admin.php";
-            }
-             else if (data === "estudiante") {
-                window.location = "frmestudiante.php";
-            }
-           
-
-        }, 'json');
-    });
+  
 
     $("#divLogout").click(function() {
-        $.post('Controlador/fachada.php', {
+        $.post('Controlador/clsFachada.php', {
             clase: 'clsLogin',
             oper: 'cerrar'
 

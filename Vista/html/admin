@@ -1,0 +1,34 @@
+<?php
+session_start();
+if (($_SESSION['estado'] == false)) {
+    header("Location: index.html");
+}
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title><?php echo $_SESSION['usr']; ?></title>
+    </head>
+    <body>
+    <h>hola admin</h>
+
+   <?
+                if (isset($_SESSION['estado'])) {
+                    if ($_SESSION['estado'] == true) {
+                        ?>                        
+                        <div id="divLogout">
+                            <a href = "#">
+                                <span class = "sdt_active"></span>
+                                <span class = "sdt_wrap">
+                                    <span id="btnLogout" class="sdt_link">Cerrar sesion</span>
+                                </span>
+                            </a>
+                        </div>
+                        <?
+                    }
+                }
+                ?>
+               
+</body>
+</html>
